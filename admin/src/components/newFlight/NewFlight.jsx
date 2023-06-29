@@ -161,12 +161,12 @@ const validate = (formValues) => {
 
   requiredFields.forEach(field => {
     if (!formValues[field]) {
-      errors[field] = 'Do not leave blank';
+      errors[field] = 'Không bỏ trống';
     }
   })
 
   if (formValues['startFrom'] === formValues['destination']) {
-    errors['destination'] = 'Do Not Leave Blank';
+    errors['destination'] = 'Destinationkhông được trùng Departure Point';
   }
 
   if(formValues['takeOffTime'] && formValues['landingTime']) {

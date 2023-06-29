@@ -94,7 +94,7 @@ const validate = (formValues) => {
   ]
   requiredFields.forEach(field => {
     if(!formValues[field]) {
-      error[field] = 'Do not leave blank'
+      error[field] = 'Không bỏ trống'
     }
   });
 
