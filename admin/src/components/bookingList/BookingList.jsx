@@ -17,7 +17,7 @@ function BookingList(props) {
     { field: 'address', headerName: "Address", width: 130 },
     { field: 'nationality', headerName: "Nation", width: 100 },
     { field: 'totalPrice', headerName: "TotalPrice", width: 130, 
-      valueFormatter: ({value}) => value.toLocaleString('it-IT', { style: 'currency', currency: 'INR' }) },
+      valueFormatter: ({value}) => value.toLocaleString('it-IT', { style: 'currency', currency: 'VND' }) },
     {
       field: 'actions',
       headerName: 'Actions',
